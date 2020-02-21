@@ -40,13 +40,13 @@ $(document).ready(function(){
 		    var index = $("#db2aa > div").index(this);
 		    var hno = $("#db2aa > div").eq(index).attr("data-hno");
 		    params = {hno : hno};
-		    getboradList3("/board/D/-1");
+		    getboradList3("/board/D/0");
 		});
 		$("#db3aa > div").click(function(){
 		    var index = $("#db3aa > div").index(this);
 		    var mno = $("#db3aa > div").eq(index).attr("data-mno");
 		    params = {mno : mno};
-		    getboradList3("/board/D/-1");
+		    getboradList3("/board/D/0");
 		});
 		$("#serch").click(function(){
 	
