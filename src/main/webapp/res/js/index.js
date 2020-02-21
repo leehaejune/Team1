@@ -19,7 +19,7 @@ $(document).ready(function(){
 	console.log("loginDiv", logindiv);
 	if (logindiv == "1") {
 		logon(parisUdea);
-		$('login_head').text('로그인이 필요합니다');
+		$('#login_head').text('로그인이 필요합니다');
 		logindiv = 0;
 		$('#bg').text("0");
 	} 
@@ -59,7 +59,7 @@ function logon(parisUdea){
 //		ab.style.display = 'none';
 //		bc.style.display = 'none';
 //	}
-	$('login_head').empty();
+	$('#login_head').empty();
 	var saveId = getCookie("saveId");
 	$('#bg').toggle();
 	$('#login').toggle();

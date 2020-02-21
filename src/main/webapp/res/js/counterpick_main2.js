@@ -312,11 +312,11 @@ $(document).ready(function(){
 	
 	function firsttest(){
 		var imgTag1 = document.getElementById('votechar_img1');
-		$("#votechar_name_1").html("아나");
-		imgTag1.src = "http://192.168.3.231/img/char/Ana.jpg";
+		$("#votechar_name_1").html("영웅1");
+		imgTag1.src = "/res/img/char/hero_null.png";
 		var imgTag2 = document.getElementById('votechar_img2');
-		$("#votechar_name_2").html("젠야타");
-		imgTag2.src = "http://192.168.3.231/img/char/Zenyatta.jpg";
+		$("#votechar_name_2").html("영웅2");
+		imgTag2.src = "/res/img/char/hero_null.png";
 	}
 	
 });
