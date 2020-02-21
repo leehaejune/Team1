@@ -19,7 +19,7 @@ public class MybatisConfig {
 	public DataSource dataSource() throws Exception {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
-		dataSource.setUrl("jdbc:log4jdbc:mariadb://192.168.3.231:3306/project");
+		dataSource.setUrl("jdbc:log4jdbc:mariadb://localhost:3306/project");
 		dataSource.setUsername("team1");
 		dataSource.setPassword("team1234");
 //		JndiDataSourceLookup jdsl = new JndiDataSourceLookup();
