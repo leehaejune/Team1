@@ -39,9 +39,9 @@
 					</div>
 			<form action="/board4" method="post" id="write" name="form1">	
 				<div id = "ddb11">
-					<div class = "hero1"><img id="hero1" src ="http://192.168.3.231/img/char/Genji.jpg"/></div>
+					<div class = "hero1"><img id="hero1" src ="/res/img/char/Genji.jpg"/></div>
 					<input type="hidden" value = "1" id ="hno" >	
-					<div class = "map1"><img id="map1" src ="http://192.168.3.231/img/map/map1.jpg"/></div>
+					<div class = "map1"><img id="map1" src ="/res/img/map/map1.jpg"/></div>
 					<input type="hidden" value = "1" id ="mno" >
 					<div class = "hero2"><span id= "heroname" style= " padding : 0px 5px 0px 0px">겐지</span>&nbsp;<span id ="mapname">66번국도</span></div>
 					<div class = "hero3"><textarea id = "edit1"  rows="4" cols="50"></textarea></div>
