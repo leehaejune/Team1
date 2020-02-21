@@ -125,7 +125,7 @@ $(document).ready(function(){
 			data : click
 		}).done(function(d) {
 			alert("글작성 완료");
-//			window.location.href = '/board';
+			window.location.href = '/board';
 			
 		});
 	});
