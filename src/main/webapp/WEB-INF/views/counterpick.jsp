@@ -67,7 +67,7 @@
 											</td>
 											<td class="votetr2_td votetr2_td3">
 												<div class="vote_button_strong_div">
-													<button type="button" id="vote_button_strong_a_3" class="vote_button_strong_a">우세
+													<button type="button" id="vote_button_strong_a_3" class="vote_button_strong_a">약세
 													</button>
 												</div>
 											</td>

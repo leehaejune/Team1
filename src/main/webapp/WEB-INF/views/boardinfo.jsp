@@ -23,22 +23,25 @@
 		<c:import url="/head" />
 		<section>
 			<c:import url="/stL" />
-			<div id="stM">
-				<div id = "mmain">
-					<div id ="boardList4"></div>
-					
-				</div>
-					<div id = "ddb5">
-						<dl id="boardList1"></dl>
-						<dl id="boardList2"></dl>
+			
+				<div id="stM">
+					<div id = "mmain">
+						<div id ="boardList4"></div>
+			
+						<div id = "ddb5">
+							<dl id="boardList1"></dl>
+							<dl id="boardList2"></dl>
+						</div>
 					</div>
+					
 					<c:if test="${sessionScope.UserInfo ne null}">
-					<div id = ddbar style ="float:right; margin-right:18px">
-						<button id ="upbutton" type ="button">수정</button>
-						<button id ="delbutton" type = "button">삭제</button>
-					</div> 
+						<div id = ddbar style ="float:right; margin-right:18px">
+							<button id ="upbutton" type ="button">수정</button>
+							<button id ="delbutton" type = "button">삭제</button>
+						</div> 
 					</c:if>
 				</div>
+				
 			<c:import url="/stR" />
 		</section>
 		<c:import url="/footer" />

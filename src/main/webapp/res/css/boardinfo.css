@@ -8,6 +8,7 @@ div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset {
     border: 0;
     height: auto;
 }
+
 a{
 	text-decoration: none;
 }
@@ -225,7 +226,7 @@ section{
 				
 #mmain{
 	height : auto;
-	min-height : 250px;
+/* 	min-height : 250px; */
 	background-color: #fff;
     padding-top: 10px;
     padding-bottom : 10px;
@@ -305,12 +306,13 @@ section{
 	width : 710px;
 	height : auto;
 	padding : 5px;
-	background: url('../img/bg_710x210_manual_top.jpg') no-repeat;
+	background: url('../img/bg_710x210_manual_top.jpg');
+	margin-left : 15px;
 }
 .top {
 	width : 694px;
 	height : 28px;
-	background : url(../img/subtitle_694x28_blue1.png);
+	background : url('../img/subtitle_694x28_blue1.png');
 	margin : 0 4px 0 4px;
 	font-weight: bold;
     color: #fff;
@@ -321,7 +323,7 @@ section{
 .pen{
 	width : 692px;
 	heigth : auto;
-	
+
 	background-color :#fff;
 	color : black;
 	margin-left: 2px;
@@ -329,23 +331,23 @@ section{
     text-indent: 5px;
 	padding: 7px;
 }
-/* #ddb3{ */
-/* 	width : 710px; */
-/* 	height : auto; */
-/* 	margin-left : 15px; */
+#ddb3{
+	width : 710px;
+	height : auto;
+	margin-left : 15px;
 /* 	background: url(../img/bg_710x210_manual_top.jpg) no-repeat; */
-/* 	padding : 5px; */
-/* } */
-/* #ddb4{ */
-/* 	width : 710px; */
-/* 	min-height:auto; */
-/* 	margin-left : 15px; */
-/* 	background: url(../img/bg_710x210_manual_top.jpg) repeat-y; */
-/* 	padding : 5px; */
-/* } */
+	padding : 5px;
+}
+#ddb4{
+	width : 710px;
+	min-height:auto;
+	margin-left : 15px;
+	/* 	background: url(../img/bg_710x210_manual_top.jpg) repeat-y; */
+	padding : 5px;
+}
 #ddb5 {
 	width: 710px;
-    min-height : 207px;
+/*     min-height : 207px; */
     height : auto;
 	padding: 9px 4px 9px 4px;
     margin-left: 15px;
@@ -361,11 +363,11 @@ section{
 }
 #ddb5 dt {
     width: 340px;
-    height: 31px;
+    height: 25px;
     color: #fff;
     font-weight: bold;
-    text-indent: 12px;
-    line-height: 32px;
+    text-indent: 5px;
+    line-height: 20px;
 /*     _line-height: 33px; */
     background: transparent url(http://static.inven.co.kr/image_2011/overwatch/community/title_340x31_blue_1a.png) left top no-repeat;
     overflow: hidden;
