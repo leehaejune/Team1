@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<dt>최근
-		<span style="color:#9ce5ff;">댓글이 달린</span>
+	<dt>인기가
+		<span style="color:#9ce5ff;">많은</span>
 		공략
 	</dt>
 	<dd>

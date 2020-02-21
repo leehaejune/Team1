@@ -5,7 +5,6 @@
 <html>
 <body>
 <div id="stM">
-				
 	<div id="main">
 		<h3 id = "title">
 			<span id = "title-span"> 오버워치 영웅정보 > </span>
@@ -224,8 +223,6 @@
 <!-- 			<div id="cmtbtn" style="display: none;"> -->
 			</div>
 	</div>
-	</div>
-				
-			</div>
+</div>
 </body>
 </html>

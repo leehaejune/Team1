@@ -4,7 +4,7 @@
 <html>
 <body>
 	<dt>최근
-		<span style="color:#9ce5ff;">평가</span>
+		<span style="color:#9ce5ff;">작성</span>
 		 된 공략
 	</dt>
 	<dd>
