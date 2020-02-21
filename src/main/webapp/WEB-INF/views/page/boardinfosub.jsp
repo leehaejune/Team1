@@ -13,9 +13,8 @@
 		<div id = "ddb11">
 			<div class = "hero1"><img src ="${result.result4.heroimg}"></div>
 			<div class = "hero2">${result.result4.heroname}</div>
-			<div class = "hero3">${result.result4.title} <br><span style="color:#ffc70e;">작성자 : </span><span id ="bid">${result.result4.id}</span> <span style="color:#ffc70e;">| 조회수 :</span> ${result.result4.hits}
-			</div>	
-				<div class = "hero4"><a href="http://localhost:8080/heroinfo?key=${result.result4.hno}"><img src ="/res/img/sungmin.png"></a></div>
+			<div class = "hero4"><a href="/heroinfo?key=${result.result4.hno}"><img src ="/res/img/sungmin.png"></a></div>
+			<div class = "hero3">${result.result4.title} <br><span style="color:#ffc70e;">작성자 : </span><span id ="bid">${result.result4.id}</span> <span style="color:#ffc70e;">| 조회수 :</span> ${result.result4.hits}</div>	
 				
 			<div id = "ddb2" class ="ddb2">
 				<div class = "top"><span>머리말</span></div>

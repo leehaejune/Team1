@@ -15,7 +15,7 @@
 <body>
 	<div id="bg" class="logon" style="text-align:center; font-size:3px; color:grey;">${logindiv}</div>
 	<div id="login">
-		<div id="login_head" style="text-align:center; color:red; line-height:210px;"></div>
+		<div id="login_head" style="text-align:center; color:red; line-height:217px; font-weight: bold;"></div>
 		<div id="login_body">
 			<div id="div_no1">
 				<form id="input_form" action="/login" method="post">

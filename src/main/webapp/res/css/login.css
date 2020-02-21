@@ -30,7 +30,6 @@ div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset {
 		    height: 92px;
 		    background: url(../img/inven_logo.gif) no-repeat center top;
 		    margin-top: 0px;
-		    cursor: pointer;
 		}
 		#login_body{
 			width: calc(100% - (100% - 480px));

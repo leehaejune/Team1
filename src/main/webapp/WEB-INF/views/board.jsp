@@ -13,7 +13,7 @@
 <script src="/res/js/board.js"></script>
 <script src="/res/js/index.js"></script>
 <style type="text/css">
-.active {background-color: red;}
+.active {background-color: #237dc0;}
 #db6 a {padding: 5px 10px; border-radius: 8px;}
 </style>
 
@@ -48,7 +48,7 @@
 			</div>
 			<div id = "db4">
 				<div class = "mennu1">				
-					   <div id="filter_left" style= "text-align: center; font-weight : 800; font-size :15px"   >
+					   <div id="filter_left" style= "text-align: center; font-weight : 800; font-size :14px; color:#044077;"   >
 					     <span >검색 기능</span> 
 <!-- 					         <li id="filter_left_1"> -->
 <!-- 					            <input type="radio" name="filter_left_input"> -->

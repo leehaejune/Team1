@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
 <!DOCTYPE html>
 <html>
 <body>
@@ -8,8 +9,8 @@
 	<div id="main">
 		<h3 id = "title">
 			<span id = "title-span"> 오버워치 영웅정보 > </span>
-			<a href ="herolist">
-					<img src = "/res/img/list_btn_99x24.png">
+			<a href ="herolist" style="margin:5px 5px;">
+				<img src = "/res/img/list_btn_99x24.png">
 			</a>
 		</h3>
 		<div id = "box">
@@ -137,7 +138,7 @@
 				<h4 id ="cmtTitle">나도 한마디</h4>
 				<p class ="cmtNum" id ="cmtNums">
 				코멘트("
-				<em>2</em>
+				<em>${fn:length(CommentBeans)}</em>
 				")
 				</p>
 				<table class = "cmtList" border="0" cellpadding="0" cellspacing="0">
@@ -211,16 +212,16 @@
 					</tbody>
 				</table>  
 			</div>
-			<div id="cmtpg">
-				<span class="basetext">
-					<span class="ar1">이전</span>
-					<span class="ar2">1</span> 
-					<span class="ar3">다음</span>
-				</span>
-			</div>
-			<div id="cmtnotes"></div>
-			<div id="cmtfooter"></div>
-			<div id="cmtbtn" style="display: none;">
+<!-- 			<div id="cmtpg"> -->
+<!-- 				<span class="basetext"> -->
+<!-- 					<span class="ar1">이전</span> -->
+<!-- 					<span class="ar2">1</span>  -->
+<!-- 					<span class="ar3">다음</span> -->
+<!-- 				</span> -->
+<!-- 			</div> -->
+<!-- 			<div id="cmtnotes"></div> -->
+<!-- 			<div id="cmtfooter"></div> -->
+<!-- 			<div id="cmtbtn" style="display: none;"> -->
 			</div>
 	</div>
 	</div>

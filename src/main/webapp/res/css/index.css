@@ -47,7 +47,7 @@ body{
 	clear:both;
 	display:inline-block;
 	width: 1092px;
-	margin-left: calc(50% - 546px);
+	margin: 0 calc(50% - 546px);
 	padding: 0;
 }
 	header{ 
@@ -369,6 +369,7 @@ footer{
 		min-width:742px;
 	}
 	#body{
+		margin: 0 auto !important;
 		width:100vw;
 		max-width:1024px;
 		min-width:742px;

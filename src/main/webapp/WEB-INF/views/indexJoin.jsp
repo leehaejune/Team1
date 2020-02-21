@@ -21,7 +21,7 @@
 						<input type="hidden" name="${_auth.paramName}" value="${_auth.paramValue}" />
 						<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 						<div class="input_div">
-							<input id="idCheckForm" class="input_box" type="text" name="signid" placeholder="아이디" required="required">
+							<input id="idCheckForm" class="input_box" type="text" name="signid" placeholder="아이디" required="required" autocomplete="off">
 						</div>
 						<div class="input_div">
 							<input class="input_box" type="password" name="pwd1" id="pwd1" placeholder="비밀번호" required="required"><br>
@@ -30,10 +30,10 @@
 							<input class="input_box" type="password" name="pwd2" id="pwd2" placeholder="비밀번호 확인" required="required" disabled="disabled"><br><br>
 						</div>
 						<div class="input_div">
-							<input class="input_box" type="text" name="nick" id="nick" placeholder="닉네임" required="required"><br>
+							<input class="input_box" type="text" name="nick" id="nick" placeholder="닉네임" required="required" autocomplete="off"><br>
 						</div>
 						<div class="input_div">
-							<input class="input_box" type="email" name="email" id="email" placeholder="이메일" required="required"><br>
+							<input class="input_box" type="email" name="email" id="email" placeholder="이메일" required="required" autocomplete="off"><br>
 						</div>
 						<div>
 							<button id="CheckForm" type="button" disabled="disabled">회원 폼을 모두 작성해주세요!</button>

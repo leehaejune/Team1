@@ -629,6 +629,18 @@ body{display: block}
 			width: 150px;
 			height: 300px; 
 		}
+	#btnOk{
+		width: 57px;
+		height: 33px;
+		background-color: #1c70b2;
+		color: white;
+	}
+	#btnCancel{
+		width: 57px;
+		height: 33px;
+		background-color: #1c70b2;
+		color: white;
+	}
 footer{
 	position:relative;
 	background: url('../img/bg_915_9a.jpg') no-repeat;

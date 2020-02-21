@@ -8,7 +8,6 @@ div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset {
     border: 0;
     height: auto;
 }
-
 a{
 	text-decoration: none;
 }
@@ -294,7 +293,7 @@ section{
 .hero4{
 	width : 118px;
 	height : 51px;
-	margin:0px 5px 20px 10px;
+	margin: 19px 9px 20px 10px;
 	position : relative;
 	float :right;
 	}
@@ -435,9 +434,21 @@ section{
 			width: 150px;
 			height: 300px; 
 		}
+	#upbutton{
+		width: 57px;
+		height: 33px;
+		background-color: #1c70b2;
+		color: white;
+	}
+	#delbutton{
+		width: 57px;
+		height: 33px;
+		background-color: #1c70b2;
+		color: white;
+	}
 footer{
 	position:relative;
-	background: url(../img/bg_915_9a.jpg') no-repeat;
+	background: url('../img/bg_915_9a.jpg') no-repeat;
 	width:915px;
 	height:176px;
 	padding-bottom: 25px;

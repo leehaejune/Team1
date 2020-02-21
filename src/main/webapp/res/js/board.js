@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	var params={};
 	var listView4 = function(e){
 		
 		$("#boardList1").load("/boardsub1", {});
@@ -49,26 +49,40 @@ $(document).ready(function(){
 		    getboradList3("/board/D/-1");
 		});
 		$("#serch").click(function(){
-			if(option ==  "subject"){
+	
+			var option = $("#selectbar option:selected").val();
+			
+			console.log(option);
+			if(option == "subject"){
 		
-			params = {title : $("#blank").val()};
+			params = {
+					title : $("#blank").val(),
+					id : null
+					};
 			console.log(params);
-			getboradList3("/board/D/-1", {title : $("#blank").val()});
+			getboradList3("/board/D/0");
 			} else {
+
+			params = {
+					title : null,
+					id : $("#blank").val()
+					};
+			console.log("params1");
 			console.log(params);
-			params = {id : $("#blank").val()};
-			getboradList3("/board/D/-1", {id : $("#blank").val()});
+			getboradList3("/board/D/0"	);
 					
 			}
 		})
-		
 	
-	}
-	
-	var option = $("#selectbar option:selected").val();
 
-	var getboradList3 = function(url, params){
+	}
+
+	
+
+	var getboradList3 = function(url){
+		console.log("Ddd0000");
 		console.log(url, params);
+		
 		$.ajax({
 			"url": url,
 			"type": "post",
