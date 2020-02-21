@@ -54,9 +54,9 @@
 			and b.mno = ${mno}
 		</if>
 		<if test="title != null">
-			and b.title LIKE '$%{title}%'
+			and b.title LIKE '%${title}%'
 		</if>
-		<if test="title != null">
+		<if test="id != null">
 			and b.id LIKE '%${id}%'
 		</if>
 		
@@ -76,6 +76,12 @@
 		</if>
 		<if test="mno != null">
 			and b.mno = ${mno}
+		</if>
+		<if test="title != null">
+			and b.title LIKE '%${title}%'
+		</if>
+		<if test="id != null">
+			and b.id LIKE '%${id}%'
 		</if>
   </select>
   <select id = "getboardList" parameterType= "Integer" resultType="Map">
