@@ -1,0 +1,529 @@
+
+@charset "UTF-8";
+div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+#hd3 a:visited, a:link{
+	color:white;
+}
+* {box-sizing: border-box;}
+.dsBlc {display: block !important;}
+	#full_body{
+	width: 742px;
+	background-color: #f6f6f6;
+	margin: 0;
+}
+html{
+	font-family: gulim, 굴림, Helvetica;
+	font-weight: normal;
+	font-size:12px;
+    letter-spacing: 0px;
+    font-style: normal;
+    text-decoration: none;
+    color:#000000;
+    overflow-x:hidden; 
+}
+body{
+	position:relative;
+	display:block;
+	margin:0;
+    padding: 0;
+	background: url('../img/lijiang-tower.jpg') transparent no-repeat center top;
+    background-attachment: fixed !important;
+    background-position-y: 0px !important;
+}
+#body{
+	box-sizing:border-box;
+	float:none;
+	clear:both;
+	display:block;
+	width: 1092px;
+	height: auto;
+	margin: 0 auto !important;
+	padding: 0;
+}
+	header{ 
+		display:block; 
+		width: 915px; 
+		height: 207px;
+		overflow-x:hidden !important; 
+	}
+	#hd1{
+		border-bottom: 1px solid #dcdcdc;
+		left:0;
+		position:absolute;
+		display:inline;
+		width: 100%;
+		min-width:1090px;
+		height: 30px !important;
+		background-color: #fbfbfb;
+		margin:0; padding:0;
+		
+		font-size: 11px;
+	    font-family: '돋움', dotum, gulim, '굴림', 'Apple SD Gothic Neo', Helvetica;
+	    font-weight: normal;
+	    letter-spacing: 0;
+	    line-height: 140%;
+	}
+	#hd2{
+		padding:0;
+		width:915px;
+		height:120px;
+		margin-top: 40px !important;
+		margin-bottom: 4px !important;
+		overflow: visible;
+	}
+		#logo{
+			box-sizing:border-box;
+			width: 280px; height: 120px;
+			background: url('../img/logo1_overwatch.png') no-repeat center center;
+		}
+		#hd2-2{
+			background:url('../img/1216_blackdesert_1an_635x120.jpg');
+			box-sizing:border-box;
+			width:635px; height: 120px;
+		}
+	#hd3{
+		width:100%;
+		height:43px;
+		margin:0 auto;
+		display:block;
+		background:#021535;
+		border-top: 2px solid #ffb033;
+		border-bottom: 1px solid #172643;
+		overflow: hidden;
+		color: #ffffff;
+	    font-size: 14px;
+	    font-family: NanumBarunGothic, sans-serif;
+	    font-weight: bold;
+	    text-align: center;
+	    line-height: 38px;
+	    letter-spacing: -2px;
+	}
+		.menu1{
+			width:152px;
+			height:40px;
+			border-right: 1px solid #1a325e;
+			border-left: 1px solid #626d86;
+			box-sizing:border-box;
+			padding:0;
+			margin:0;
+			list-style-type: disc;
+		}
+		.link:hover{
+			cursor: pointer;
+			background:#ea8400;
+		}
+section{
+	display:block;
+	position:relative;
+	float:none;
+	width:1092px;
+	min-height:900px;
+}
+	section::before{
+		z-index: 5;
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		width:173px;
+		height:100%;
+		background-color: #021535;
+		box-sizing: border-box;
+	}
+	#stL{
+		position: relative;
+		z-index: 15;
+		display:inline;
+		padding:0;
+	    width: 173px;
+	    min-height:900px;
+		background-color: #021535;
+		width:173px;
+		float :left;
+		overflow: hidden;
+	}
+		#loginDiv{
+			height:156px;
+			background: url(../img/bg_memberInfo.png) no-repeat;
+			border-bottom:1px solid #000;
+			overflow: hidden;
+			margin:0 1px;
+		}
+			#LoginL{
+				background-color: #55678f;
+				border: 1px solid #203259;
+				height:82px;
+				margin: 44px 5.5px 0;
+				line-height: 1.4;
+			}
+			#invenlogin{
+				display: block;
+				width:133px;
+				height:30px;
+				margin:0 11.5px;
+				background-color: #bc9dee;
+				color: white;
+				border: 1px solid #fff6f1;
+			}
+			#invenlogin:hover{
+				cursor: pointer;
+			}
+		.LeftUl{
+			box-sizing:border-box;
+			display:block;
+			height: 37px;
+			width:173px;
+		    padding-left: 20px;
+		    background-color: #546386;
+		    color: #fff;
+		    border-top: 2px solid #ff9c00;
+		    font-family: NanumBarunGothic, sans-serif;
+		    font-size: 13px;
+		    font-weight: bold;
+		    line-height: 37px;
+		}
+		.LeftDiv{
+			box-sizing:border-box;
+			width:171px;
+			margin: 0 1px;
+					padding: 7px 6px;
+					height: auto;
+		}
+			.LeftLi{
+				margin:0 9px;
+				padding: 0 10px;
+				width:119px;
+				height:30px;
+				border-bottom: 1px solid #546386;
+				font-family: NanumBarunGothic, sans-serif;
+				font-weight: normal;
+					color: #FFFFFF;
+					font-size: 12px;
+					line-height: 30px;
+			}
+	#stM{
+		min-height:900px !important;
+		position:relative;
+		display:block;
+		background-color:white;
+		width:742px;
+		padding:0px;
+		box-sizing:border-box;
+	}
+				
+				
+#mmain{
+	height : auto;
+	min-height : 250px;
+	background-color: #fff;
+    padding-top: 10px;
+    padding-bottom : 10px;
+	margin-top: 0;
+	color: rgb(255, 255, 255);
+}
+#stM a{
+	font-family: gulim, 굴림, Helvetica;	
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-style: normal;
+    text-decoration: none;
+    font-weigt:bold;
+    cursor : point;
+}
+#ddb1{
+	background : white;
+	
+}
+#ddb1 .hhero{
+
+    width: 710px;
+    height: 40px;
+    margin : 0 0 15px 15px;
+    overflow: hidden;
+    
+    letter-spacing: -1px;
+    text-indent: 41px;
+    text-align: left;
+    text-decoration: none;
+    font: bold 14px/42px 굴림, gulim;
+    background: url('../img/title_710x40_blue1.png') left top no-repeat;
+	color: #fff;
+}
+#ddb11{
+	width : 710px;
+	height : 90px;
+	margin-left : 15px;
+	background: url('../img/bg_710x210_manual_top.jpg') no-repeat;}
+.hero1{width: 70px;
+	   height : 70px;
+	   margin : 10px;
+	   background : #fff left top no-repeat;
+	   
+	   }   
+.hero1 img {
+	width :70px;
+	height :70px;
+}
+.hero2{width : 480px;
+	   height : 25px;
+	   margin-top :10px;
+	   color: #0efcff;
+       font-size: 13px;
+       font-weight: bold;
+}
+.hero3{width : 480px;
+	   height : 40px;
+	   overflow : hidden;
+	   font-size : 12px;
+	   line-height : 20px;
+	   }
+.hero4{
+	width : 118px;
+	height : 51px;
+	margin:0px 5px 20px 10px;
+	position : relative;
+	float :right;
+	}
+.hero4 img {
+	width: 118px;
+	height : 51px;
+}
+.ddb2 {
+	width : 710px;
+	height : auto;
+	padding : 5px;
+	background: url('../img/bg_710x210_manual_top.jpg') no-repeat;
+}
+.top {
+	width : 694px;
+	height : 28px;
+	background : url(../img/subtitle_694x28_blue1.png);
+	margin : 0 4px 0 4px;
+	font-weight: bold;
+    color: #fff;
+    line-height: 28px;
+    text-indent: 35px;
+    margin-left: 1px;
+}
+.pen{
+	width : 692px;
+	heigth : auto;
+	
+	background-color :#fff;
+	color : black;
+	margin-left: 2px;
+	line-height: 28px;
+    text-indent: 5px;
+	padding: 7px;
+}
+/* #ddb3{ */
+/* 	width : 710px; */
+/* 	height : auto; */
+/* 	margin-left : 15px; */
+/* 	background: url(../img/bg_710x210_manual_top.jpg) no-repeat; */
+/* 	padding : 5px; */
+/* } */
+/* #ddb4{ */
+/* 	width : 710px; */
+/* 	min-height:auto; */
+/* 	margin-left : 15px; */
+/* 	background: url(../img/bg_710x210_manual_top.jpg) repeat-y; */
+/* 	padding : 5px; */
+/* } */
+#ddb5 {
+	width: 710px;
+    min-height : 207px;
+    height : auto;
+	padding: 9px 4px 9px 4px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    background: url(../img/bg_710x210_manual_top.jpg) no-repeat;
+    background-color: #dfe8f1;
+}
+#ddb5 dl{
+	width: 340px;
+    overflow: hidden;
+    margin: 0 5px;
+    float :left;
+}
+#ddb5 dt {
+    width: 340px;
+    height: 31px;
+    color: #fff;
+    font-weight: bold;
+    text-indent: 12px;
+    line-height: 32px;
+/*     _line-height: 33px; */
+    background: transparent url(http://static.inven.co.kr/image_2011/overwatch/community/title_340x31_blue_1a.png) left top no-repeat;
+    overflow: hidden;
+    clear: both;
+}
+#ddb5 dd{
+	width: 340px;
+    height: 157px;
+    padding: 3px 0px 4px 3px;
+    background-color: #fff;
+    border: 1px solid #9aaabb;
+    border-top-width: 0;
+    overflow: hidden;
+    clear: both;
+	margin : 0px;
+    
+}
+#ddb5 ul{
+	list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin : 0px;
+    padding-left :0px;
+    height : auto;
+    
+}
+#ddb5 li{	
+	width: 334px;
+	height: 17px;
+    margin-top: 5px;
+    line-height: 12px;
+    text-indent: 0px;
+    background-repeat: no-repeat;
+    background: transparent;
+    text-align: -webkit-match-parent;
+	overflow: hidden;
+    clear: both;
+}
+
+#ddb5 dd ul span{
+	font-size: 12px;
+    color: #ff5400;
+    fontweight : bold;
+}
+#ddb5 .dd{
+	color:#9ce5ff;
+}				
+				
+				
+				
+	#stR{
+		float:right;
+		top:150px;
+		padding-top:-110px;
+		margin-left:10px;
+		display:block;
+		width:167px;
+		min-height:770px;
+	}
+		#adR{
+			position: relative;
+			top:-41px;
+			background: url('../img/1216_blackdesert_1an_150x300.jpg');
+			width: 150px;
+			height: 300px; 
+		}
+footer{
+	position:relative;
+	background: url(../img/bg_915_9a.jpg') no-repeat;
+	width:915px;
+	height:176px;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+}
+	#ftcntnt{
+		font-size: 11px;
+	    font-family: 'Malgun Gothic', 'Dotum';
+	    margin: 7px 0 0 14px;
+	    width: 435px;
+	    height: 95px;
+	    background: white;
+	    letter-spacing: -0.5px;
+	    color: #525252;
+	    margin-top:40px;
+	}
+@media (max-width:1024px){
+	header{
+		width:100vw;
+		max-width:1024px;
+		min-width:742px;
+	}
+	section{
+		background-color: white;
+		width:100vw;
+		min-width:742px;
+	}
+	#body{
+		width:100vw;
+		max-width:1024px;
+		min-width:742px;
+	}
+	#hd1{
+		min-width:742px;
+	}
+	#hd2{
+		width:100%;
+	}
+		#logo{
+			width:20%;
+			background-size: 140px;
+		}
+		#hd2-2{
+			width:80%;
+		}
+			.menu1{
+				display: none;
+			}
+			.link{
+				display: block;
+				width: 25%;
+			}
+	#hd3{
+		max-width:1024px;
+	}
+	#stL{
+		display:none;
+	}
+	#stM{
+		margin-left:calc(50vw - 371px);
+		
+	}
+	#stR{
+		display:none;
+	}
+	section::before{
+		display:none;
+	}
+	footer{
+		
+		background-color:white;
+		width:100vw;
+		min-width:742px;
+		background-position: 0 -35px;
+		border-top: 1px solid #dcdcdc;
+		height:130px;
+		padding:0;
+	}
+		#ftcntnt{
+			position:relative;
+			margin-top:0;
+			top:3px;
+		}
+}
+@media (max-width:742px){
+	#stM{
+		margin:0;
+	}	
+}

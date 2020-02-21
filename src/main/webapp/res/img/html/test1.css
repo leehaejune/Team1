@@ -1,0 +1,49 @@
+@charset "UTF-8";
+html{font-size:10px;}
+body {margin: 0;}
+header{
+	box-shadow: 3px 0px 3px black;
+	background-color:white;
+	height:70px;
+	width:100vw;
+	border:thin;
+	position:fixed;
+	top:0;
+	left:0;
+}
+#logo{
+	font-size:2.1rem;
+	padding-top:19px;
+	text-align:center;
+	width:110px;
+	height:70px;
+	float:left;
+	text-align:center;
+}
+ul{padding:0; margin:0;}
+li{
+	font-size:1.7rem;
+	padding-top:21px;
+	display:inline-block;
+	width:110px;
+	box-sizing:border-box;
+	height:70px;
+	float:right;
+	text-align:center;
+	list-style: none;}
+li:hover{
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+#home1{
+	height:100vh;
+	background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	filter: grayscale(70%);
+	position: relative;
+}
+
+
+@media only screen and (max-width: 550px){}

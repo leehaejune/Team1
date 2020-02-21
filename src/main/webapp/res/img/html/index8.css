@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body {margin: 0;}
+p{margin:0; text-align:center;}
+div{
+	height:100vh; 
+/* 	width:100vw; */
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bg1{background-image:url("1.png");}
+/* .bg2{background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/6a/%EA%B3%84%ED%9A%8D%EC%A0%81_%EB%B3%80%ED%99%94%EA%B3%BC%EC%A0%95.png");} */
+/* .bg3{background-image:url("http://mblogthumb2.phinf.naver.net/20160205_225/musclemind_14546762661720QSNe_JPEG/P20160204_025302000_71EDA185-78C3-43F3-B67E-5B138F393E73.JPG?type=w420");} */
+
+#div2-3 div:hover {
+	background-color:#FFFFFF;
+	cursor: pointer;
+}

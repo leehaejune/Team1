@@ -1,0 +1,18 @@
+@charset "UTF-8";
+html {font-size:10px;}
+body {margin:0;}
+div {}
+#div1 {background-color: red;
+	 height:20vh; }
+#div2 {background-color: blue;
+	 min-height:60vh; width:780px; float:left;}
+#div3 {background-color: yellow;
+	 min-height:60vh; width:300px; float:right;}
+#div4 {background-color: green;
+	 height:20vh; clear:both;}
+#D {height:60vh; width:1080px; margin:0 auto;}
+
+@media only screen and (max-width: 550px){
+	#div3 {background-color:aqua;
+		width:15vw; float:right;}
+}

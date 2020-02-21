@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+  
+  <insert id="signup" parameterType="hashmap">
+  	<selectKey keyProperty="id" resultType="kr.team1.app.web.index.UserBean" order="AFTER">
+  		SELECT id, pwd FROM USERS where id = #{id}
+  	</selectKey>
+  	INSERT INTO USERS
+  		(`id`, `pwd`, `email`, `nick`) 
+    VALUES 
+    	(#{id},#{pwd},#{email},#{nick})
+  </insert>
+  
+  <select id="getUser" parameterType="kr.team1.app.web.index.UserBean" resultType="kr.team1.app.web.index.UserBean">
+  	SELECT id, pwd, role, email, nick 
+      FROM USERS
+      WHERE 1 = 1
+      <if test="id != null">
+     	and id = #{id}
+     </if>
+  </select>
+  
+  <select id="idExist" parameterType="String" resultType="Integer">
+  	SELECT COUNT(*) FROM USERS
+      WHERE id = #{signid} AND enabled = 1
+  </select>
+  
+  <update id="userup" parameterType="Map">
+		UPDATE USERS SET 
+		`nick`		= #{nick},
+		`email`		= #{email}
+		<if test="pwd != null">
+			, `pwd` = #{pwd}
+		</if>
+		WHERE id = #{id}  
+  </update>
+  
+  <select id="pwdCheck" parameterType="Map" resultType="String">
+  	SELECT pwd FROM USERS WHERE id = #{id} AND enabled = 1
+  </select>
+  
+  <update id="delete" parameterType="Map">
+  	UPDATE USERS SET
+  	`enabled` = 0 WHERE id = #{id}
+  </update>
+  
+  <select id="bList" resultType="Map">
+	SELECT b.no, b.title, h.heroname, u.nick, b.date FROM BOARD AS b
+	INNER JOIN HERO AS h ON h.no = b.hno
+	INNER JOIN USERS AS u ON u.id = b.id
+	ORDER BY b.date DESC LIMIT 10
+  </select>
+</mapper>

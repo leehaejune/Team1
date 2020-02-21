@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="heroinfo">
+<!-- select id="getHeroInfo"는 DAO와 매핑을 위한 ID -->
+<!-- HEROINFORM 테이블에서 `no`(기본키)를 기준으로 DB 컬럼을 READ -->
+<select id="getHeroInfo" parameterType="String" resultType="kr.team1.app.web.heroinfo.InformBean">
+	SELECT 
+		`no`,herorole, heroname, inform, feature, `name`, age, job, addr, company, `position`, hp, shield, def, skillname, img, story
+	FROM 
+		HEROINFORM
+	WHERE `no` = (SELECT `no` FROM HERO WHERE NO = #{key})
+</select>
+
+<select id="getSkill" parameterType="String" resultType="kr.team1.app.web.heroinfo.SkillBean">
+	SELECT 
+		`no`,skillno, heroname, sname, content, `key`, img, movie, movieimg
+	FROM 
+		SKILL
+	WHERE heroname = (SELECT heroname FROM HERO WHERE NO = #{key})
+</select>
+
+<select id="getComments" parameterType="String" resultType="kr.team1.app.web.heroinfo.CommentBean">
+	SELECT 
+		`no`, id, content, date, heropage
+	FROM 
+		COMMENTS
+	WHERE heropage = (SELECT heroname FROM HERO WHERE NO = #{key})
+</select>
+
+<insert id="setComments" parameterType="kr.team1.app.web.heroinfo.CommentBean">
+	INSERT INTO COMMENTS
+		(id, content, `date`, heropage)
+	VALUES
+		(#{id}, #{content}, #{date}, #{heropage});
+</insert>
+
+<!-- HERO 테이블에서 heroposition(포지션)을 기준으로 DB 컬럼을 SELECT -->
+<select id="getList" parameterType="String" resultType="kr.team1.app.web.heroinfo.HeroBean">
+	SELECT 
+		no, heroname, heroimg, heroposition
+	FROM 
+		HERO
+	WHERE heroposition = #{hp}
+</select>
+
+</mapper>

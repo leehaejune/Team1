@@ -1,0 +1,13 @@
+@charset "UTF-8";
+html {font-size:10px;}
+body {margin:0; overflow:hidden;}
+div {margin:0; height: 110vh; display:inline-block; width:calc(100vw/3);}
+#div1 {background-color: red;
+	 width:15vw; float:left;}
+#div2 {background-color: yellow;
+	width:70vw; float:left;}
+
+@media only screen and (max-width: 600px){
+	#div3 {background-color:aqua;
+		width:15vw; float:right;}
+}

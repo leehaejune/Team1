@@ -1,0 +1,19 @@
+@charset "UTF-8";
+html {font-size:10px;}
+body {margin:0;}
+#main {background-color: black; width:1080px; min-height: 100vh; margin:0 auto;}
+
+header{background-color: gray; width:1080px; min-height: 15vh;}
+
+nav{background-color: green; width: 300px; min-height: 85vh; float:left;}
+
+#margin {margin:}
+#div1 {background-color: red; width: 780px; min-height: 33vh; float:right; padding:10px;}
+	.art1 {background-color: blue; width: calc(100%/3-20px); height: calc(100%/5*4-20px); margin:10px;}
+	#art1 {float:left;}
+	#art2 {float:right;}
+	
+#div2 {background-color: blue; width:780px; min-height:52vh; float:right; padding:21px;}
+	.art2 {background-color: red; height:20vh; width:695px; height:8vh; margin:21px;}
+
+@media only screen and (max-width: 550px){

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {margin: 0;}
+#div1{
+	background-color: yellow;
+	float:left;
+	display:inline-block;
+	height: 50vh;
+}
+#div2{background-color: red; display:inherit;}
+#div3{background-color: green; display:inherit;}
+#div4{
+	clear:both;
+	height: 30vh;
+	background-color: blue;
+}
+ul{padding:0;}
+li{width:25%;
+	height:50px;
+	float:left;
+	text-align:center;
+	list-style: none;}
+li:hover{
+	background-color:blue;
+	cursor:pointer;
+}
+
+@media only screen and (max-width: 550px){}

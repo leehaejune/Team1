@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="counterpick_sql">
+	<select id="getHero" resultType="Map">
+		SELECT * FROM HERO
+	</select>
+	
+	<select id="getVoteHero" resultType="Map" parameterType="Map">
+		SELECT * FROM VOTE1 where mnhero=#{heroname};
+	</select>
+	
+	<select id="getVoteno1" resultType="Map" parameterType="Map">
+		SELECT voteno1 FROM VOTE1 where mnhero=#{mnhero} and cnhero=#{cnhero};
+	</select>
+	
+	<select id="getVoteno2" resultType="Map" parameterType="Map">
+		SELECT voteno2 FROM VOTE1 where mnhero=#{mnhero} and cnhero=#{cnhero};
+	</select>
+	
+	<select id="getVoteno3" resultType="Map" parameterType="Map">
+		SELECT voteno3 FROM VOTE1 where mnhero=#{mnhero} and cnhero=#{cnhero};
+	</select>
+	
+	<select id="heroinfo_heroname" resultType="kr.team1.app.web.counterpick.CounterpickHeroBean" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean">
+		select no, heroname, heroimg from HERO where no=#{no};
+	</select>
+	
+	<select id="heroinfo_heroimg1" resultType="kr.team1.app.web.counterpick.CounterpickHeroBean" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean">
+<!-- 		select heroimg from HERO where heroname=#{heroname}; -->
+		SELECT HERO.heroimg FROM HERO, VOTE1 WHERE VOTE1.cnhero=HERO.heroname AND VOTE1.mnhero=#{heroname};
+	</select>
+	
+	<select id="heroinfo_herovote" resultType="Map" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean">
+		select heroname, heroimg from HERO where no=#{no};
+<!-- 		select heroname, heroimg from HERO where no=#{no2}; -->
+		
+	</select>
+  
+<!--   <select id="heroinfo_hero" resultType="kr.team1.app.web.counterpick.CounterpickHeroBean" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean"> -->
+<!--   	select heroname, heroimg from HERO where heroname=#{heroname}; -->
+<!--   	select heroname from HERO; -->
+<!--   </select> -->
+  
+<!--   <select id="herolist_img" resultType="kr.team1.app.web.counterpick.CounterpickHeroBean" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean"> -->
+<!--   	select heroimg from HERO where heroname=#{heroname}; -->
+<!--   </select> -->
+  
+	<update id="vote_update1" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean">
+		update VOTE1 set voteno1=#{voteno1} where mnhero=#{mnhero} and cnhero=#{cnhero};
+	</update>
+	
+	<update id="vote_update2" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean">
+		update VOTE1 set voteno2=#{voteno2} where mnhero=#{mnhero} and cnhero=#{cnhero};
+	</update>
+	
+	<update id="vote_update3" parameterType="kr.team1.app.web.counterpick.CounterpickHeroBean">
+		update VOTE1 set voteno3=#{voteno3} where mnhero=#{mnhero} and cnhero=#{cnhero};
+	</update>
+  
+</mapper>

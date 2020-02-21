@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body {margin: 0;}
+header{
+	height: 50px;
+	background-color: blue;
+}
+section:{
+	padding: 20px 0;
+}
+.clear:after{
+	clear: both;
+	content:"";
+	display:block;
+}
+footer{
+	height: 50px;
+	background-color: green;
+}
+div{
+	height: 90px;
+	background-color: red;
+	width: calc((100% / 3) - 10px);
+	margin: 5px;
+	float: left;
+}
+@media only screen and (max-width: 550px){}

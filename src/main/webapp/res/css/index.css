@@ -1,0 +1,431 @@
+
+@charset "UTF-8";
+div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: auto;
+}
+a{
+	text-decoration: none;
+}
+#hd3 a:visited, a:link{
+	color:white;
+}
+
+* {box-sizing: border-box;}
+.dsBlc {display: block !important;}
+	#full_body{
+	width: 742px;
+	background-color: #f6f6f6;
+	margin: 0;
+}
+html{
+	font-family: gulim, 굴림, Helvetica;
+	font-weight: normal;
+	font-size:12px;
+    letter-spacing: 0px;
+    font-style: normal;
+    text-decoration: none;
+    color:#000000;
+    overflow-x:hidden; 
+}
+body{
+	position:relative;
+	display:block;
+	margin:0;
+    padding: 0;
+	background: url('../img/lijiang-tower.jpg') transparent no-repeat center top;
+    background-attachment: fixed !important;
+    background-position-y: 0px !important;
+}
+#body{
+	box-sizing:border-box;
+	float:none;
+	clear:both;
+	display:inline-block;
+	width: 1092px;
+	margin-left: calc(50% - 546px);
+	padding: 0;
+}
+	header{ 
+		display:block; 
+		width: 915px; 
+		height: 207px;
+		overflow-x:hidden !important; 
+	}
+	#hd1{
+		border-bottom: 1px solid #dcdcdc;
+		left:0;
+		position:absolute;
+		display:inline;
+		width: 100%;
+		min-width:1090px;
+		height: 30px !important;
+		background-color: #fbfbfb;
+		margin:0; padding:0;
+		
+		font-size: 11px;
+	    font-family: '돋움', dotum, gulim, '굴림', 'Apple SD Gothic Neo', Helvetica;
+	    font-weight: normal;
+	    letter-spacing: 0;
+	    line-height: 140%;
+	}
+	#hd2{
+		padding:0;
+		width:915px;
+		height:120px;
+		margin-top: 40px !important;
+		margin-bottom: 4px !important;
+		overflow: visible;
+	}
+		#logo{
+			box-sizing:border-box;
+			width: 280px; height: 120px;
+			background: url('../img/logo1_overwatch.png') no-repeat center center;
+		}
+		#hd2-2{
+			background:url('../img/1216_blackdesert_1an_635x120.jpg');
+			box-sizing:border-box;
+			width:635px; height: 120px;
+		}
+	#hd3{
+		width:100%;
+		height:43px;
+		margin:0 auto;
+		display:block;
+		background:#021535;
+		border-top: 2px solid #ffb033;
+		border-bottom: 1px solid #172643;
+		overflow: hidden;
+		color: #ffffff;
+	    font-size: 14px;
+	    font-family: NanumBarunGothic, sans-serif;
+	    font-weight: bold;
+	    text-align: center;
+	    line-height: 38px;
+	    letter-spacing: -2px;
+	}
+		.menu1{
+			width:152px;
+			height:40px;
+			border-right: 1px solid #1a325e;
+			border-left: 1px solid #626d86;
+			box-sizing:border-box;
+			padding:0;
+			margin:0;
+			list-style-type: disc;
+		}
+		.link:hover{
+			cursor: pointer;
+			background:#ea8400;
+		}
+section{
+	display:inline-block;
+	position:relative;
+	width:1092px;
+	
+}
+	section::before{
+		z-index: 5;
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		width:173px;
+		height:100%;
+		background-color: #021535;
+		box-sizing: border-box;
+	}
+	#stL{
+		position: relative;
+		z-index: 15;
+		display:inline;
+		padding:0;
+	    width: 173px;
+	    min-height:900px;
+		background-color: #021535;
+		width:173px;
+		float :left;
+		overflow: hidden;
+	}
+		#loginDiv{
+			height:156px;
+			width:173px;
+			background: url('../img/bg_memberInfo.png') no-repeat;
+			border-bottom:1px solid #000;
+			overflow: hidden;
+			margin:0 1px;
+		}
+			#LoginL{
+				background-color: #55678f;
+				border: 1px solid #203259;
+				height:82px;
+				margin: 44px 5.5px 0;
+				line-height: 1.4;
+			}
+			#invenlogin{
+				display: block;
+				width:133px;
+				height:30px;
+				margin:0 11.5px;
+				background-color: #bc9dee;
+				color: white;
+				border: 1px solid #fff6f1;
+			}
+			#invenlogin:hover{
+				cursor: pointer;
+			}
+		.LeftUl{
+			box-sizing:border-box;
+			display:block;
+			height: 37px;
+			width:173px;
+		    padding-left: 20px;
+		    background-color: #546386;
+		    color: #fff;
+		    border-top: 2px solid #ff9c00;
+		    font-family: NanumBarunGothic, sans-serif;
+		    font-size: 13px;
+		    font-weight: bold;
+		    line-height: 37px;
+		}
+		.LeftDiv{
+			box-sizing:border-box;
+			width:171px;
+			margin: 0 1px;
+					padding: 7px 6px;
+					height: auto;
+		}
+			.LeftLi{
+				margin:0 9px;
+				padding: 0 10px;
+				width:119px;
+				height:30px;
+				border-bottom: 1px solid #546386;
+				font-family: NanumBarunGothic, sans-serif;
+				font-weight: normal;
+					color: #FFFFFF;
+					font-size: 12px;
+					line-height: 30px;
+			}
+	#stM{
+		min-height:900px !important;
+		position:relative;
+		display:block;
+		background-color:white;
+		width:742px;
+		padding:10px 0 50px 10px;
+		box-sizing:border-box;
+	}
+		article{
+			position:relative;
+		}
+		
+		#mainImg{
+			width: 722px;
+			height: 320px;
+			margin:0 2px 2px 0;
+		}
+			.art1{
+				float:left;
+				display:block;
+				width:360px;
+				height:159px;
+				overflow:hidden;
+				background: url('../img/overwatch.jpg') no-repeat;
+				background-size: 722px;
+				position: relative;
+				opacity: 90%;
+			}
+	 		.art1:hover{ 
+	 			opacity: 100%; 
+	 			transition: all .15s;
+	 			background-size: 854px;
+			} 
+ 		#walkthrough{ 
+			margin-top: 30px;
+			width:722px;
+			height:277px !important;
+		}
+			#WT{
+				position:relative; 
+				left:0; 
+				top:35px; 
+				width:722px; 
+				height:244px; 
+				border: 1px solid #d0d0d0;
+				padding: 1px;
+				box-sizing: border-box;
+			}
+				#WT li{
+					display: block;
+					width:716px;
+					height:24px;
+					line-height: 24px;
+					box-sizing: border-box;
+				}
+		#brand{
+			margin-top: 30px;
+			width:722px;
+			height:207px !important;
+			background-color: white;
+			border: 1px solid #dfdddd;
+			border-top:4px solid #d4581b;
+			box-sizing: border-box;
+		}
+			#bra{
+				position:absolute; 
+				left:0; 
+				width:722px; 
+				height:48px; 
+				background-color: #fff;
+			}
+				#br_img{
+					margin:9px 80px auto 9px;
+					width:77px;
+					height:25px;
+					background: url('../img/sp_common_title.png') no-repeat; 
+				}
+			.bran{
+				position:absolute; 
+				left:-1px; 
+				top:48px; 
+				width:722px; 
+				height:155px; 
+				border: 1px solid #d0d0d0;
+				padding: 14px 0;
+				box-sizing: border-box;
+			}	
+				.fiv{
+					width:153px;
+					height:126px;
+					margin: 0 13px;
+					text-align:center;
+					padding-top:97px;
+					box-sizing: border-box;
+				}
+				#br_li a{
+					text-align:center;
+					line-height:47px;
+					float:left;
+					display:block;
+					width:170px;
+					font-weight: bold;
+				}
+				li a:hover{
+					color:#d4581b;
+				}
+				.brand-body {
+					display: none;
+				}
+	#stR{
+		float:right;
+		top:150px;
+		padding-top:-110px;
+		margin-left:10px;
+		display:block;
+		width:167px;
+		min-height:770px;
+	}
+		#adR{
+			position: relative;
+			top:-41px;
+			background: url('../img/1216_blackdesert_1an_150x300.jpg');
+			width: 150px;
+			height: 300px; 
+		}
+footer{
+	position:relative;
+	bottom:3px;
+	background: url('../img/bg_915_9a.jpg') no-repeat;
+	width:915px;
+	height:176px;
+	box-sizing: border-box;
+}
+	#ftcntnt{
+		font-size: 11px;
+	    font-family: 'Malgun Gothic', 'Dotum';
+	    margin: 7px 0 0 14px;
+	    width: 435px;
+	    height: 95px;
+	    background: white;
+	    letter-spacing: -0.5px;
+	    color: #525252;
+	    margin-top:40px;
+	}
+@media (max-width:1024px){
+	header{
+		width:100vw;
+		max-width:1024px;
+		min-width:742px;
+	}
+	section{
+		background-color: white;
+		width:100vw;
+		min-width:742px;
+	}
+	#body{
+		width:100vw;
+		max-width:1024px;
+		min-width:742px;
+	}
+	#hd1{
+		min-width:742px;
+	}
+	#hd2{
+		width:100%;
+	}
+		#logo{
+			width:20%;
+			background-size: 140px;
+		}
+		#hd2-2{
+			width:80%;
+		}
+			.menu1{
+				display: none;
+			}
+			.link{
+				display: block;
+				width: 25%;
+			}
+	#hd3{
+		max-width:1024px;
+	}
+	#stL{
+		display:none;
+	}
+	#stM{
+		margin-left:calc(50vw - 371px);
+		
+	}
+	#stR{
+		display:none;
+	}
+	section::before{
+		display:none;
+	}
+	footer{
+		background-color:white;
+		width:100vw;
+		min-width:742px;
+		background-position: 0 -35px;
+		border-top: 1px solid #dcdcdc;
+		height:130px;
+		padding:0;
+	}
+		#ftcntnt{
+			position:relative;
+			margin-top:0;
+			top:3px;
+		}
+}
+@media (max-width:742px){
+	#stM{
+		margin:0;
+	}	
+}
